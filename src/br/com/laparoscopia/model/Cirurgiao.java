@@ -20,7 +20,6 @@ public class Cirurgiao {
         this.categoria = categoria;
     }
 
-    // Getters e Setters
     public String getNome_medico() {
         return nome_medico;
     }
@@ -77,7 +76,6 @@ public class Cirurgiao {
         this.categoria = categoria;
     }
 
-    // Métodos de funcionalidade
     public void realizarProcedimento() {
         System.out.println("O cirurgião " + nome_medico + " está realizando um procedimento de laparoscopia.");
     }
@@ -91,8 +89,6 @@ public class Cirurgiao {
         }
     }
 
-
-    // Método de teste
     public void teste() {
         System.out.println("===== Testando Cirurgião =====");
         System.out.println("Nome do Cirurgião: " + getNome_medico());

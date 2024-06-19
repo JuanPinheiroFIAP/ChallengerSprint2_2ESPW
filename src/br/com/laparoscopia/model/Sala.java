@@ -30,7 +30,6 @@ public class Sala {
         System.out.println("O: " + Cirurgiao.nome_medico + " está iniciando simulação na sala " + nome_sala + " com dificuldade " + nivelDificuldade);
     }
 
-    // Método de teste
     public void testeSala() {
         System.out.println("\n===== Testando Sala =====");
         System.out.println("Nome da Sala: " + getNome());
