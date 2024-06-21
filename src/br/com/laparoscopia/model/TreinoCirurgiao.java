@@ -29,18 +29,4 @@ public class TreinoCirurgiao {
             System.out.println("O valor da quantidade deve ser maior que zero para realizar o treinamento.");
         }
     }
-
-    public void realizarTreinoCoordenacao(int quantidade) {
-        System.out.println("Iniciando treino para o cirurgião " + nomeCirurgiao + "...");
-        System.out.println("Equipamento utilizado: " + equipamento);
-        System.out.println("Procedimento de treino: " + procedimento);
-
-        if (quantidade > 0) {
-            int novoNivelHabilidade = quantidade + Cirurgiao.nivelHabilidade;
-            System.out.println(nomeCirurgiao + " treinou e melhorou seu nível de habilidade para: " + novoNivelHabilidade);
-            Cirurgiao.nivelHabilidade = novoNivelHabilidade;
-        } else {
-            System.out.println("O valor da quantidade deve ser maior que zero para realizar o treinamento.");
-        }
-    }
 }
