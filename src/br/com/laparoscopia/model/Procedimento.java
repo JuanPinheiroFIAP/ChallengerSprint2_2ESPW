@@ -1,20 +1,20 @@
 package br.com.laparoscopia.model;
 
 public class Procedimento {
-    private String tipo;
-    private int duracao; // em minutos
+    public static String tipoProcedimento;
+    private int duracao;
 
-    public Procedimento(String tipo, int duracao) {
-        this.tipo = tipo;
+    public Procedimento(String tipoProcedimento, int duracao) {
+        this.tipoProcedimento = tipoProcedimento;
         this.duracao = duracao;
     }
 
     public String getTipo() {
-        return tipo;
+        return tipoProcedimento;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setTipo(String tipoProcedimento) {
+        this.tipoProcedimento = tipoProcedimento;
     }
 
     public int getDuracao() {
@@ -26,7 +26,7 @@ public class Procedimento {
     }
 
     public void iniciarProcedimento() {
-        System.out.println("Iniciando procedimento: " + tipo + " com duração de " + duracao + " minutos.");
+        System.out.println("Iniciando procedimento: " + tipoProcedimento + " com duração de " + duracao + " minutos.");
     }
 
     public void testeProcedimento() {

@@ -22,6 +22,7 @@ public class Jogo {
     }
 
     public void iniciarJogo() {
+        System.out.println("\n===== Iniciando Jogo =====");
         sala.iniciarSimulacao();
         paciente.exibirDetalhes();
         equipamento.usarEquipamento();

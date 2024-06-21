@@ -2,13 +2,13 @@ package br.com.laparoscopia.model;
 
 public class Cirurgiao {
     public static String nome_medico;
-    public int experiencia;
-    public String especialidade;
-    public int idade;
-    public String hospital;
-    public int nivelHabilidade;
-    public Categoria categoria;
-    private int quantidade;
+    private int experiencia;
+    private String especialidade;
+    private int idade;
+    private String hospital;
+    public static  int nivelHabilidade;
+    private Categoria categoria;
+    private int nivel;
 
     public Cirurgiao(String nome, int experiencia, String especialidade, int idade, String hospital, int nivelHabilidade, Categoria categoria) {
         this.nome_medico = nome;
@@ -23,7 +23,6 @@ public class Cirurgiao {
     public String getNome_medico() {
         return nome_medico;
     }
-
     public void setNome(String nome) {
         this.nome_medico = nome;
     }
@@ -64,8 +63,8 @@ public class Cirurgiao {
         return nivelHabilidade;
     }
 
-    public void setNivelHabilidade(int nivelHabilidade) {
-        this.nivelHabilidade = nivelHabilidade;
+    public void setNivelHabilidade(int novoNivelHabilidade) {
+        this.nivel = nivelHabilidade;
     }
 
     public Categoria getCategoria() {
@@ -78,15 +77,6 @@ public class Cirurgiao {
 
     public void realizarProcedimento() {
         System.out.println("O cirurgião " + nome_medico + " está realizando um procedimento de laparoscopia.");
-    }
-
-    public void treinar(int quantidade) {
-        if (quantidade > 0) {
-            this.nivelHabilidade = quantidade + this.nivelHabilidade;
-            System.out.println(nome_medico + " treinou e melhorou seu nível de habilidade para: " + this.nivelHabilidade);
-        } else {
-            System.out.println("O valor da quantidade deve ser maior que zero para realizar o treinamento.");
-        }
     }
 
     public void teste() {

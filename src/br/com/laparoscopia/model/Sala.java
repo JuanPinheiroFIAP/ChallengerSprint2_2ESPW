@@ -1,15 +1,18 @@
 package br.com.laparoscopia.model;
-import br.com.laparoscopia.model.Cirurgiao;
 
 public class Sala {
-    public String nome_sala;
-    public int nivelDificuldade;
+    private String nomeCirurgiao;
+    private String nome_sala;
+    private int nivelDificuldade;
 
     public Sala(String nome_sala, int nivelDificuldade) {
+        this.nomeCirurgiao = Cirurgiao.nome_medico;
         this.nome_sala = nome_sala;
         this.nivelDificuldade = nivelDificuldade;
     }
-
+    public String getNomeMedico() {
+        return Cirurgiao.nome_medico;
+    }
     public String getNome() {
         return nome_sala;
     }
@@ -27,7 +30,7 @@ public class Sala {
     }
 
     public void iniciarSimulacao() {
-        System.out.println("O: " + Cirurgiao.nome_medico + " está iniciando simulação na sala " + nome_sala + " com dificuldade " + nivelDificuldade);
+        System.out.println("O: " + nomeCirurgiao + " está iniciando simulação na sala " + nome_sala + " com dificuldade " + nivelDificuldade);
     }
 
     public void testeSala() {
