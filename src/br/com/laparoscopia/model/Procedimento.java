@@ -1,7 +1,7 @@
 package br.com.laparoscopia.model;
 
 public class Procedimento {
-    public static String tipoProcedimento;
+    private String tipoProcedimento;
     private int duracao;
 
     public Procedimento(String tipoProcedimento, int duracao) {

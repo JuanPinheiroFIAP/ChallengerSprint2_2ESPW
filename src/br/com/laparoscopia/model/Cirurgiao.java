@@ -1,14 +1,14 @@
 package br.com.laparoscopia.model;
 
 public class Cirurgiao {
-    public static String nome_medico;
-    private int experiencia;
-    private String especialidade;
-    private int idade;
-    private String hospital;
-    public static  int nivelHabilidade;
-    private Categoria categoria;
-    private int nivel;
+    private String nome_medico; // Nome do Médico
+    private int experiencia; // Em anos 
+    private String especialidade; // POderia ser variada porém estamos trabalhando com Laparoscopia 
+    private int idade; // Idade do Médico 
+    private String hospital; // Nome do hospital onde o Médico está realizando a cirurgia
+    private int nivelHabilidade; // Atributo do jogo, nivel de habilidade do Player 
+    private Categoria categoria; // Categoria do Médico Estudante, Residente e etc. 
+    private int nivel; // Atributo do jogo, nivel de coordenação do Médico
 
     public Cirurgiao(String nome, int experiencia, String especialidade, int idade, String hospital, int nivelHabilidade, Categoria categoria) {
         this.nome_medico = nome;
@@ -64,7 +64,7 @@ public class Cirurgiao {
     }
 
     public void setNivelHabilidade(int novoNivelHabilidade) {
-        this.nivel = nivelHabilidade;
+        this.nivelHabilidade = novoNivelHabilidade;
     }
 
     public Categoria getCategoria() {
@@ -82,7 +82,7 @@ public class Cirurgiao {
     public void teste() {
         System.out.println("===== Testando Cirurgião =====");
         System.out.println("Nome do Cirurgião: " + getNome_medico());
-        System.out.println("Experiência: " + getExperiencia() + " anos");;
+        System.out.println("Experiência: " + getExperiencia() + " anos");
         System.out.println("Especialidade: " + getEspecialidade());
         System.out.println("Idade: " + getIdade());
         System.out.println("Hospital: " + getHospital());
